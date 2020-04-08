@@ -7,3 +7,6 @@ DMM WEBCAMPの学習コンテンツ【JavaScriptを学ぼう】の研修課題�
 - 開始日 4月8日
 - 終了日 4月8日
 - 成果物 JavaScriptの記述方法を2通り学んだ
+
+2章【JavaScriptの基本文法】
+- 開始日 4月8日
