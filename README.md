@@ -10,3 +10,5 @@ DMM WEBCAMPの学習コンテンツ【JavaScriptを学ぼう】の研修課題�
 
 2章【JavaScriptの基本文法】
 - 開始日 4月8日
+- 終了日 4月8日
+- 成果物 JavaScriptでの変数の書き方、四則演算/文字列の結合、条件分岐、繰り返し処理（while文、for文）を学んだ
