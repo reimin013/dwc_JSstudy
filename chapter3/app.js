@@ -1,15 +1,27 @@
 // じゃんけんの手を入力してもらうプロンプト欄を生成
 var user_hand = prompt('じゃんけんの手をグー、チョキ、パーから選んでください。');
 
+while((user_hand != "グー") && (user_hand != "チョキ") && (user_hand != "パー") && (user_hand != null)) {
+ alert('グー・チョキ・パーのいずれかを入力してください');
+ user_hand = prompt('じゃんけんの手をグー、チョキ、パーから選んでください。');
+}
+
 // じゃんけんの手をランダムに作成する関数を呼び出す
 var js_hand = getJShand();
-
 // ユーザの手とJavaScriptのじゃんけんの手を比べる関数を呼び出し、結果をjudgeに入れる
 var judge = winLose(user_hand, js_hand);
 
 // 結果を表示する
-alert('あなたの選んだ手は' + user_hand + 'です。\nJavaScriptの選んだ手は' + js_hand + 'です。\n結果は' + judge + 'です。');
+if(user_hand != null){
+  alert('あなたの選んだ手は' + user_hand + 'です。\nJavaScriptの選んだ手は' + js_hand + 'です。\n結果は' + judge + 'です。');
+}else{
+  alert('またチャレンジしてね');
+}
 
+// 1番上の行で user_hand が変数だと定義しているので、その後は var を書かなくてもOK！
+// if文の中に関数をいれたら上手くいかない！！
+// (user_hand == "グー" && user_hand == "チョキ" )←この書き方は不適切！
+// if文の行き先がないとエラーになってしまう？つまり、条件に抜け漏れがあるとエラーになる可能性がありそう！
 
 // ランダムでじゃんけんの手を作成する関数
 function getJShand(){
