@@ -25,3 +25,5 @@ DMM WEBCAMPの学習コンテンツ【JavaScriptを学ぼう】の研修課題�
 
 5章【jQueryでHTMLのCSS要素を操作しよう】
 - 開始日 4月8日
+- 終了日 4月9日
+- 成果物 jQueryでHTMLのCSS要素にアニメーションを追加
