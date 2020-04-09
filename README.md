@@ -35,3 +35,5 @@ DMM WEBCAMPの学習コンテンツ【JavaScriptを学ぼう】の研修課題�
 
 7章【thisとchildren】
 - 開始日 4月9日
+- 終了日 4月9日
+- 成果物 jQueryでセレクタに「this」と「children」を使う場合の記述方法を学んだ
