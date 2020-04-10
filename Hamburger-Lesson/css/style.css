@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+h1{
+ text-align: center;
+ margin: 50px 0;
+}
+
+.box{
+ height: 300px;
+ width: 90%;
+ max-width: 600px;
+ margin: 0 auto 50px;
+ background-color: #eee;
+}
+
+/*--- ハンバーガーアイコン ---*/
+
+#hm-icon{
+ position: fixed;
+ right: 20px;
+ top: 20px;
+ /*z-index の値が大きいものほど前に表示される */
+ z-index: 10;
+}
+
+.menu-trigger,
+.menu-trigger span{
+ display: inline-block;
+ /* transition プロパティは、1つまたは複数の単体プロパティによる'遷移'を、コンマで区切って指定します
+ 2点間の時間的な変化を主に表現します */
+ transition: all .4s;
+ box-sizing: border-box;
+}
+
+.menu-trigger{
+ position: relative;
+ width: 50px;
+ height: 44px;
+}
+
+.menu-trigger span{
+ position: absolute;
+ left: 0;
+ width: 100%;
+ height: 4px;
+ /* #000 は黒色のことを表す. height と合わせて、黒色のボーダー（ハンバーガー）を表示させることができる */
+ background-color: #000;
+ border-radius: 4px;
+}
+
+.menu-trigger span:nth-of-type(1){
+ top: 0;
+}
+
+.menu-trigger span:nth-of-type(2){
+ top: 20px;
+}
+
+.menu-trigger span:nth-of-type(3){
+ bottom: 0;
+}
+
+/*　-webkit- : Google Chrome / Safari でつけるベンダープレフィクス
+「人によっては見ているブラウザが違っていて、そのブラウザによっては見えない人もいる。」*/
+.menu-trigger.active span:nth-of-type(1){
+ -webkit-transform: translateY(20px) rotate(-45deg);
+ transform: translateY(20px) rotate(-45deg);
+ background-color: #fff;
+}
+
+.menu-trigger.active span:nth-of-type(2){
+ opacity: 0;
+}
+
+.menu-trigger.active span:nth-of-type(3){
+ -webkit-transform: translateY(-20px) rotate(45deg);
+ transform: translateY(-20px) rotate(45deg);
+ background-color: #fff;
+}
+
+/* --- spメニュー --- */
+
+#sp-menu{
+ position: fixed;
+ top: 0;
+ left: 0;
+ /* #000: 黒色 */
+ background: #000;
+ /*　#fff: 白色 */
+ color: #fff;
+ width: 100%;
+ min-height: 100%;
+ display: none;
+ z-index: 9;
+}
+
+#sp-menu li{
+ text-align: center;
+ margin-bottom: 30px;
+}
+
+#sp-menu a{
+ /*　#fff: 白色 */
+ color: #fff;
+ text-decoration: none;
+ font-weight: bold;
+}
+
