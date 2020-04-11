@@ -17,6 +17,12 @@
 //= require_tree .
 
 $(document).ready(function () {
+      $('.jquery').on('click', function(){
+            $(this).css('color','red');
+      });
+});
+
+$(document).ready(function () {
   $("#theTarget").skippr({
       // スライドショーの変化 ("fade" or "slide")
       transition : 'slide',
